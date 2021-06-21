@@ -16,8 +16,11 @@ on:
   push:
     branches:
     - main
+<<<<<<< HEAD
     - sameh
     
+=======
+>>>>>>> 51d2ef65e509b881b12abcea08c738fcd4a758d3
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT }}
