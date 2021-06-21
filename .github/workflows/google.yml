@@ -55,6 +55,7 @@ jobs:
     # Build the Docker image
     - name: Build
       run: |-
+        cd ./src/frontend-v1/
         docker build \
           --tag "gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA" \
           --build-arg GITHUB_SHA="$GITHUB_SHA" \
